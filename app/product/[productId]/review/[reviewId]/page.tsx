@@ -1,12 +1,21 @@
 import React from 'react'
 import { notFound } from 'next/navigation'
-import { Parisienne } from 'next/font/google'
 
+
+
+const getRandomInit =(count:number)=> {
+  return Math.floor(Math.random()* count)
+}
 const productReview = async({params}:
     {params:Promise<{productId:string, reviewId:string}>}) => {
         const {productId, reviewId} = await params
         if(parseInt(reviewId)>1000){
              return notFound()
+        }
+
+        const random = getRandomInit(2)
+        if(random   === 1){
+          throw new Error('Error loading review')
         }
   return (
     <div>
