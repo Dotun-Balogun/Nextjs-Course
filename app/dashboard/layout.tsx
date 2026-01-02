@@ -19,9 +19,9 @@ const DashboardLayout = ({
             <div>{children}</div>
             <div className='flex gap-4'>
                 <div>
-                    <div>
+                   
                         {revenue}
-                    </div>
+                  
                 </div>
                 <div className='flex flex-col gap-4'>
                         <div>

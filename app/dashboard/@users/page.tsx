@@ -1,8 +1,9 @@
+import Card from '@/app/components/Card'
 import React from 'react'
 
 const UserAnalytics = () => {
   return (
-    <div>UserAnalytics</div>
+    <Card>UserAnalytics</Card>
   )
 }
 

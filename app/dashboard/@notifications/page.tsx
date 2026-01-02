@@ -1,3 +1,5 @@
+import Card from '@/app/components/Card'
+import Link from 'next/link'
 import React from 'react'
 
 const wait = async()=>{
@@ -7,8 +9,14 @@ const wait = async()=>{
 const Notifications = async() => {
 
   await wait()
-  return (
-    <div>Notifications</div>
+  return (  
+    <Card>
+      Notification{' '}
+      
+      <Link href='/dashboard/archived' className='text-base
+      text-blue-200'> Archived </Link>
+
+    </Card>
   )
 }
 

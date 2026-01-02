@@ -1,8 +1,9 @@
+import Card from '@/app/components/Card'
 import React from 'react'
 
 const Revenue = () => {
   return (
-    <div>Revenue</div>
+    <Card>Revenue</Card>
   )
 }
 
