@@ -1,18 +1,23 @@
 import React from 'react'
+import Card from '../components/Card';
 
 const DashboardLayout = ({
     children,
     users,
     revenue,
-    notifications
+    notifications,
+    login
 }: {
     children: React.ReactNode,
     users: React.ReactNode,
     revenue: React.ReactNode,
     notifications: React.ReactNode
+    login: React.ReactNode
 
 }) => {
-    return (
+    const loggedIn = false; // Replace with actual authentication logic
+
+    return loggedIn ? (
         // <div>style this   again</div>
         <div>
             
@@ -37,6 +42,8 @@ const DashboardLayout = ({
             </div>
 
         </div>
+    ):(
+        <Card >{login}</Card>
     )
 }
 
