@@ -14,8 +14,8 @@ const page = () => {
         Go to F2
       </Link> 
       <br/>
-      <Link href={'/f2'}>
-        Go to F2
+      <Link href={'/f3'}>
+        Go to F3
       </Link>
     </div>
   </div>
