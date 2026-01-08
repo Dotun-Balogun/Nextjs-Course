@@ -6,7 +6,7 @@ import photo4 from '@/app/photo-feed/photos/img4-600x600.jpg'
 import photo5 from '@/app/photo-feed/photos/img5-600x600.jpg'
 import photo6 from '@/app/photo-feed/photos/img6-600x600.jpg'
 
-type PhotoType =    {
+export type PhotoType =    {
     id:string|number;
     src:string|StaticImageData;
     alt:string;
